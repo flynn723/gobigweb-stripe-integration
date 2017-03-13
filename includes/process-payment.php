@@ -49,7 +49,7 @@ function gobigweb_stripe_process_payment() {
 			        "id" => $custom_plan_id,
 			        "interval" => $billing_interval,
 			        "amount" => $amount,
-			        "name" => $billing_organization_name ." " . $billing_interval ."ly $". $amount,
+			        "name" => $billing_organization_name ." " . $billing_interval ."ly $". ($amount/100),
 			        "currency" => "usd"
 			    )
 			);
